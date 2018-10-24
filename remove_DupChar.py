@@ -1,4 +1,4 @@
-def removeDupes(string):
+def removeDupeChar(string):
     empty_Str = ""
     
     for i in string:
