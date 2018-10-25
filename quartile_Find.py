@@ -1,17 +1,24 @@
 #Finds quartiles of list
 
-def quartile_Find(sorted_Arr, median_Val):
-     
+def quartile_Find(Arr, median_Val, index): 
+    
+    
+    
     q1 = list()
     q3 = list()
             
-    for i in sorted_Arr:
+    for i in range(len(Arr)):
         
-        if i < median_Val:
+        if i < index:
             
-            q1.append(i)
-        elif i > median_Val:
-            
-            q3.append(i)
+            q1.append(Arr[i])
         
-    return int(median(q1)), int(median_Val), int(median(q3))
+        elif i > index:
+            
+            q3.append(Arr[i])
+   
+    print(q1)
+    print(q3)
+    
+    return median(q1), median_Val, median(q3) # without int
+
