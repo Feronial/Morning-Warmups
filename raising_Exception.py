@@ -1,6 +1,6 @@
 class Calculator():
 
-    def power(n,p):
+    def power(self,n,p):
 
         if n < 0 or p < 0 :
 
